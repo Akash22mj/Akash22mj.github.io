@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AKASH M J — AI &amp; Full Stack Engineer</title>
+  <meta name="description" content="Personal portfolio of Akash M J — AI & Full Stack Engineer (MCA 2025, ex-KPMG India Analyst) specializing in Agentic AI, MCP, LangGraph, CrewAI, Agentic RAG, PyTorch, and Python." />
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            brand: {
+              DEFAULT: '#0F766E',
+              hover: '#115E59',
+              tint: '#F0FDFA',
+              border: '#99F6E4',
+            }
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-white text-slate-900 font-sans antialiased selection:bg-[#0F766E] selection:text-white overflow-x-hidden">
+
+  <!-- Sticky Minimalist Navigation -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-sm border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-3 group">
+        <span class="w-9 h-9 rounded-lg bg-[#0F766E] text-white font-mono font-semibold text-xs tracking-wider flex items-center justify-center">
+          AMJ
+        </span>
+        <div>
+          <span class="block font-bold tracking-tight text-sm sm:text-base text-slate-900 leading-none">
+            AKASH M J
+          </span>
+          <span class="block text-[11px] font-mono text-slate-500 mt-0.5">
+            AI &amp; Full Stack Engineer
+          </span>
+        </div>
+      </a>
+
+      <nav class="flex items-center gap-1 sm:gap-2">
+        <a href="#projects" class="px-3 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition">Projects</a>
+        <a href="#simulator" class="hidden sm:inline-block px-3 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition">Pipeline Walkthrough</a>
+        <a href="#experience" class="px-3 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition">Experience</a>
+        <a href="#skills" class="hidden md:inline-block px-3 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition">Skills</a>
+        <button id="navCopyPitchBtn" type="button" class="ml-1 px-3.5 py-2 rounded-lg bg-[#0F766E] hover:bg-[#115E59] text-white text-xs sm:text-sm font-semibold transition">
+          Copy Recruiter Pitch
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="border-b border-slate-200 bg-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F0FDFA] border border-[#99F6E4] text-[#0F766E] text-xs font-mono font-medium mb-6">
+          <span class="w-2 h-2 rounded-full bg-[#0F766E]"></span>
+          Available for AI Engineer &amp; GenAI Roles • Bengaluru / Madurai / Remote
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.15] max-w-4xl mb-5">
+          Building deterministic <span class="text-[#0F766E]">Agentic AI systems</span>, MCP servers, and production Python applications.
+        </h1>
+
+        <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl mb-8">
+          MCA graduate (2025) with corporate engineering experience as an <strong class="font-semibold text-slate-900">Analyst at KPMG India</strong> and <strong class="font-semibold text-slate-900">Web Development Intern at Digizura Technologies</strong>. Focused on shipping evaluated multi-agent orchestrators, zero-execution PyTorch + RAG security ensembles, and reliable full-stack systems.
+        </p>
+
+        <!-- Primary Actions -->
+        <div class="flex flex-wrap items-center gap-3 mb-12">
+          <a href="#projects" class="px-5 py-3 rounded-lg bg-[#0F766E] hover:bg-[#115E59] text-white font-semibold text-sm transition">
+            Explore 4 Live AI Systems ↓
+          </a>
+          <a href="https://www.linkedin.com/in/akash-m-j-388318258/" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-300 text-slate-800 font-semibold text-sm transition">
+            LinkedIn Profile ↗
+          </a>
+          <a href="https://huggingface.co/Akashmj22122002" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded-lg bg-white hover:bg-slate-50 border border-slate-300 text-slate-800 font-semibold text-sm transition">
+            Hugging Face Spaces ↗
+          </a>
+        </div>
+
+        <!-- Crisp 4-Metric Summary Strip -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="p-4 rounded-xl bg-[#F8FAFC] border border-slate-200">
+            <p class="font-mono text-[11px] uppercase tracking-wider text-slate-500">DepShield AI Benchmark</p>
+            <p class="text-base sm:text-lg font-bold text-[#0F766E] mt-1">100% Recall • 87.5% F1</p>
+          </div>
+          <div class="p-4 rounded-xl bg-[#F8FAFC] border border-slate-200">
+            <p class="font-mono text-[11px] uppercase tracking-wider text-slate-500">Live Deployments</p>
+            <p class="text-base sm:text-lg font-bold text-slate-900 mt-1">4 Hugging Face Apps</p>
+          </div>
+          <div class="p-4 rounded-xl bg-[#F8FAFC] border border-slate-200">
+            <p class="font-mono text-[11px] uppercase tracking-wider text-slate-500">Corporate Experience</p>
+            <p class="text-base sm:text-lg font-bold text-slate-900 mt-1">KPMG India &amp; Digizura</p>
+          </div>
+          <div class="p-4 rounded-xl bg-[#F8FAFC] border border-slate-200">
+            <p class="font-mono text-[11px] uppercase tracking-wider text-slate-500">Education</p>
+            <p class="text-base sm:text-lg font-bold text-slate-900 mt-1">MCA (Completed 2025)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deployed AI & Agentic Projects Section -->
+    <section id="projects" class="py-16 sm:py-20 border-b border-slate-200 bg-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-10">
+          <p class="font-mono text-xs uppercase tracking-wider font-semibold text-[#0F766E] mb-1.5">
+            Deployed Systems
+          </p>
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
+            Live AI &amp; Agentic Engineering Projects
+          </h2>
+          <p class="text-sm text-slate-600 mt-2">
+            All four applications are deployed live on Hugging Face Spaces. Click <strong class="font-semibold text-slate-800">Launch Live App</strong> to test them directly or <strong class="font-semibold text-slate-800">View Architecture</strong> to inspect system design.
+          </p>
+        </div>
+
+        <!-- 2x2 Clean Card Grid (NO GitHub repo links on project cards) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <!-- Project 1: DepShield AI -->
+          <article class="rounded-xl bg-[#F8FAFC] border border-slate-200 hover:border-[#0F766E] transition p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-1 rounded-md bg-[#F0FDFA] border border-[#99F6E4] text-[#0F766E] font-mono text-xs font-semibold">
+                  Flagship • Live on HF Spaces
+                </span>
+                <span class="font-mono text-xs font-semibold text-slate-700">
+                  100% Recall • 87.50% F1
+                </span>
+              </div>
+
+              <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2.5">
+                DepShield AI — Zero-Execution Python Supply-Chain Security Firewall
+              </h3>
+
+              <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                Audits Python packages <em>before</em> <code class="font-mono text-xs bg-white border border-slate-200 px-1.5 py-0.5 rounded">pip install</code> executes—analyzing AST syntax trees, Shannon entropy, and live PyPI metadata without running untrusted setup scripts.
+              </p>
+
+              <ul class="space-y-1.5 text-xs sm:text-sm text-slate-600 mb-5">
+                <li>• <strong class="font-semibold text-slate-800">4-Stage AI Risk Ensemble:</strong> Heuristics, PyTorch risk classifier, ChromaDB threat-similarity RAG, and LLM Security Analyst.</li>
+                <li>• <strong class="font-semibold text-slate-800">Security Modules:</strong> AI Hallucination Hunter (slopsquatting scanner), Live PyPI Watchtower, and Red-Team evaluator.</li>
+                <li>• <strong class="font-semibold text-slate-800">Developer Integration:</strong> Ships with an MCP Server for VS Code and <code class="font-mono text-xs">depshield install</code> CLI.</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-5">
+                <span class="px-2.5 py-1 rounded-md bg-white border border-slate-200 font-mono text-xs text-slate-700">Python AST</span>
+                <span class="px-2.5 py-1 rounded-md bg-white border border-slate-200 font-mono text-xs text-slate-700">PyTorch</span>
+                <span class="px-2.5 py-1 rounded-md bg-white border border-slate-200 font-mono text-xs text-slate-700">ChromaDB RAG</span>
+                <span class="px-2.5 py-1 rounded-md bg-white border border-slate-200 font-mono text-xs text-slate-700">MCP &amp; CLI</span>
+              </div>
+
+              <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+                <a href="https://akashmj22122002-depshield-ai.hf.space/" target="_blank" rel="noopener noreferrer" class="flex-1 text-center px-4 py-2.5 rounded-lg bg-[#0F766E] hover:bg-[#115E59] text-white font-semibold text-xs sm:text-sm transition">
+                  Launch Live App ↗
+                </a>
+                <button type="button" data-project="depshield" class="arch-btn px-4 py-2.5 rounded-lg bg-white hover:bg-slate-100 border border-slate-300 text-slate-800 font-semibold text-xs sm:text-sm transition">
+                  View Architecture
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: The Titan Corporate Executive Network -->
+          <article class="rounded-xl bg-[#F8FAFC] border border-slate-200 hover:border-[#0F766E] transition p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-1 rounded-md bg-[#F0FDFA] border border-[#99F6E4] text-[#0F766E] font-mono text-xs font-semibold">
+                  Multi-Agent • Live on HF Spaces
+                </span>
+                <span class="font-mono text-xs font-semibold text-slate-700">
+                  Stdio MCP • 25-Cycle Loop
+                </span>
+              </div>
+
+              <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2.5">
+                The Titan Corporate Executive Network
+              </h3>
+
+              <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                Async, state-driven multi-agent simulation floor where autonomous AI executives operate companies, trade equities, and react dynamically to user-injected market shocks without human scripting between turns.
+              </p>
+
+              <ul class="space-y-1.5 text-xs sm:text-sm text-slate-600 mb-5">
+                <li>• <strong class="font-semibold text-slate-800">Stdio MCP Registries:</strong> Agents call validated financial tools directly over thread-safe Stdio pipes without middleware bloat.</li>
+                <li>• <strong class="font-semibold text-slate-800">Bounded Reasoning:</strong> 25-cycle reasoning loop per turn enables self-verification and multi-tool chaining.</li>
+                <li>• <strong class="font-semibold text-slate-800">Concurrent UI Sync:</strong> Decoupled Gradio dashboard refreshes 23 data targets via a global timer with thread-safe local persistence.</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-5">
+                <span class="px-2.5 py-1 rounded-md bg-white border border-slate-200 font-mono text-xs text-slate-700">MCP (Stdio)</span>
+                <span class="px-2.5 py-1 rounded-md bg-white border border-slate-200 font-mono text-xs text-slate-700">Asyncio</span>
+                <span class="px-2.5 py-1 rounded-md bg-white border border-slate-200 font-mono text-xs text-slate-700">Multi-Agent</span>
+                <span class="px-2.5 py-1 rounded-md bg-white border border-slate-200 font-mono text-xs text-slate-700">Gradio</span>
+              </div>
+
+              <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+                <a href="https://huggingface.co/spaces/Akashmj22122002/titan-executive-network" target="_blank" rel="noopener noreferrer" class="flex-1 text-center px-4 py-2.5 rounded-lg bg-[#0F766E] hover:bg-[#115E59] text-white font-semibold text-xs sm:text-sm transition">
+                  Launch Live App ↗
+                </a>
+                <button type="button" data-project="titan" class="arch-btn px-4 py-2.5 rounded-lg bg-white hover:bg-slate-100 border border-slate-300 text-slate-800 font-semibold text-xs sm:text-sm transition">
+                  View Architecture
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Sidekick Pro -->
+          <article class="rounded-xl bg-[#F8FAFC] border border-slate-200 hover:border-[#0F766E] transition p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-1 rounded-md bg-[#F0FDFA] border border-[#99F6E4] text-[#0F766E] font-mono text-xs font-semibold">
+                  LangGraph • Live on HF Spaces
+                </span>
+                <span class="font-mono text-xs font-semibold text-slate-700">
+                  Worker–Critic Loop
+                </span>
+              </div>
+
+              <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2.5">
+                Sidekick Pro — Autonomous Intelligence Orchestrator
+              </h3>
+
+              <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                Multi-agent research platform in LangGraph where a Playwright browser agent navigates live websites from a single plain-English prompt and a Critic agent evaluates output quality before delivery.
+              </p>
+
+              <ul class="space-y-1.5 text-xs sm:text-sm text-slate-600 mb-5">
+                <li>• <strong class="font-semibold text-slate-800">Self-Correcting Graph:</strong> Critic agent reviews extracted data against user success criteria and triggers browser retries when needed.</li>
+                <li>• <strong class="font-semibold text-slate-800">Browser Resilience:</strong> Spoofed User-Agent headers enable live data retrieval from sites that block default scrapers.</li>
+                <li>• <strong class="font-semibold text-slate-800">Automated Delivery:</strong> Produces formatted Markdown reports, high-resolution screenshots, and mobile push notifications.</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-5">
+                <span class="px-2.5 py-1 rounded-md bg-white border border-slate-200 font-mono text-xs text-slate-700">LangGraph</span>
+                <span class="px-2.5 py-1 rounded-md bg-white border border-slate-200 font-mono text-xs text-slate-700">Playwright</span>
+                <span class="px-2.5 py-1 rounded-md bg-white border border-slate-200 font-mono text-xs text-slate-700">Critic Agent</span>
+                <span class="px-2.5 py-1 rounded-md bg-white border border-slate-200 font-mono text-xs text-slate-700">Python</span>
+              </div>
+
+              <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+                <a href="https://huggingface.co/spaces/Akashmj22122002/Sidekick-Pro" target="_blank" rel="noopener noreferrer" class="flex-1 text-center px-4 py-2.5 rounded-lg bg-[#0F766E] hover:bg-[#115E59] text-white font-semibold text-xs sm:text-sm transition">
+                  Launch Live App ↗
+                </a>
+                <button type="button" data-project="sidekick" class="arch-btn px-4 py-2.5 rounded-lg bg-white hover:bg-slate-100 border border-slate-300 text-slate-800 font-semibold text-xs sm:text-sm transition">
+                  View Architecture
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Deep Research Engine -->
+          <article class="rounded-xl bg-[#F8FAFC] border border-slate-200 hover:border-[#0F766E] transition p-6 flex flex-col justify-between">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-1 rounded-md bg-[#F0FDFA] border border-[#99F6E4] text-[#0F766E] font-mono text-xs font-semibold">
+                  CrewAI • Live on HF Spaces
+                </span>
+                <span class="font-mono text-xs font-semibold text-slate-700">
+                  PDF • Word • PPTX
+                </span>
+              </div>
+
+              <h3 class="text-lg sm:text-xl font-bold text-slate-900 mb-2.5">
+                Deep Research Engine — Multi-Agent AI Research System
+              </h3>
+
+              <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                Collaborative CrewAI system where specialized agents divide web discovery, fact cross-examination, and structured synthesis into presentation-ready documents with zero manual formatting.
+              </p>
+
+              <ul class="space-y-1.5 text-xs sm:text-sm text-slate-600 mb-5">
+                <li>• <strong class="font-semibold text-slate-800">Role Specialization:</strong> Dedicated search, cross-examination, and synthesis agents verify claims across multiple sources.</li>
+                <li>• <strong class="font-semibold text-slate-800">Handoff Validation:</strong> Structured multi-step prompting preserves context accuracy across long research chains.</li>
+                <li>• <strong class="font-semibold text-slate-800">Direct Document Export:</strong> Generates downloadable <strong class="font-semibold text-slate-800">PDF, Word, and PowerPoint</strong> deliverables automatically.</li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="flex flex-wrap gap-1.5 mb-5">
+                <span class="px-2.5 py-1 rounded-md bg-white border border-slate-200 font-mono text-xs text-slate-700">CrewAI</span>
+                <span class="px-2.5 py-1 rounded-md bg-white border border-slate-200 font-mono text-xs text-slate-700">Handoff Validation</span>
+                <span class="px-2.5 py-1 rounded-md bg-white border border-slate-200 font-mono text-xs text-slate-700">PDF / DOCX / PPTX</span>
+                <span class="px-2.5 py-1 rounded-md bg-white border border-slate-200 font-mono text-xs text-slate-700">Python</span>
+              </div>
+
+              <div class="flex items-center gap-3 pt-4 border-t border-slate-200">
+                <a href="https://huggingface.co/spaces/Akashmj22122002/deep_research-personal" target="_blank" rel="noopener noreferrer" class="flex-1 text-center px-4 py-2.5 rounded-lg bg-[#0F766E] hover:bg-[#115E59] text-white font-semibold text-xs sm:text-sm transition">
+                  Launch Live App ↗
+                </a>
+                <button type="button" data-project="research" class="arch-btn px-4 py-2.5 rounded-lg bg-white hover:bg-slate-100 border border-slate-300 text-slate-800 font-semibold text-xs sm:text-sm transition">
+                  View Architecture
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive DepShield AI 4-Stage Pipeline Walkthrough -->
+    <section id="simulator" class="py-16 sm:py-20 border-b border-slate-200 bg-[#F8FAFC]">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+          <div>
+            <p class="font-mono text-xs uppercase tracking-wider font-semibold text-[#0F766E] mb-1.5">
+              Interactive Architecture Walkthrough
+            </p>
+            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
+              DepShield AI 4-Stage Inspection Pipeline
+            </h2>
+          </div>
+
+          <div class="inline-flex rounded-lg border border-slate-300 bg-white p-1" role="tablist" aria-label="Select Package Sample">
+            <button type="button" id="sampleThreatBtn" class="px-3.5 py-1.5 rounded-md bg-[#0F766E] text-white font-mono text-xs font-semibold transition">
+              Slopsquatted Threat Sample
+            </button>
+            <button type="button" id="sampleCleanBtn" class="px-3.5 py-1.5 rounded-md text-slate-600 hover:text-slate-900 font-mono text-xs font-semibold transition">
+              Verified Clean Package
+            </button>
+          </div>
+        </div>
+
+        <!-- 4 Deterministic Stages -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+          <div class="rounded-xl bg-white border border-slate-200 p-5">
+            <div class="flex items-center justify-between font-mono text-xs mb-2">
+              <span class="font-semibold text-[#0F766E]">STAGE 01</span>
+              <span id="s1Latency" class="text-slate-500">14 ms</span>
+            </div>
+            <h3 class="font-bold text-sm text-slate-900">Static AST &amp; Entropy</h3>
+            <p id="s1Detail" class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+              Detected <code class="font-mono">exec(base64.b64decode)</code> in <code class="font-mono">setup.py</code> with high Shannon entropy (7.42).
+            </p>
+          </div>
+
+          <div class="rounded-xl bg-white border border-slate-200 p-5">
+            <div class="flex items-center justify-between font-mono text-xs mb-2">
+              <span class="font-semibold text-[#0F766E]">STAGE 02</span>
+              <span id="s2Latency" class="text-slate-500">22 ms</span>
+            </div>
+            <h3 class="font-bold text-sm text-slate-900">PyTorch Risk Classifier</h3>
+            <p id="s2Detail" class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+              Risk probability <strong>0.96</strong> — new PyPI account (4 hrs old) mimicking <code class="font-mono">torch</code>.
+            </p>
+          </div>
+
+          <div class="rounded-xl bg-white border border-slate-200 p-5">
+            <div class="flex items-center justify-between font-mono text-xs mb-2">
+              <span class="font-semibold text-[#0F766E]">STAGE 03</span>
+              <span id="s3Latency" class="text-slate-500">38 ms</span>
+            </div>
+            <h3 class="font-bold text-sm text-slate-900">ChromaDB Threat RAG</h3>
+            <p id="s3Detail" class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+              94% similarity match to known environment-variable credential exfiltration patterns.
+            </p>
+          </div>
+
+          <div class="rounded-xl bg-white border border-slate-200 p-5">
+            <div class="flex items-center justify-between font-mono text-xs mb-2">
+              <span class="font-semibold text-[#0F766E]">STAGE 04</span>
+              <span id="s4Latency" class="text-slate-500">185 ms</span>
+            </div>
+            <h3 class="font-bold text-sm text-slate-900">LLM Security Analyst</h3>
+            <p id="s4Detail" class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+              Generated plain-English audit summary and enforced pre-install block via CLI &amp; MCP.
+            </p>
+          </div>
+        </div>
+
+        <!-- Audit Output Summary Bar -->
+        <div class="rounded-xl bg-white border border-slate-200 p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <p class="font-mono text-xs text-slate-500">
+              Command: <span id="simCommand" class="text-slate-900 font-semibold">depshield install torch-cuda-helper-v2</span>
+            </p>
+            <p id="simSummary" class="text-sm text-slate-700 mt-1">
+              Installation halted prior to code execution. Zero untrusted install hooks were evaluated on host.
+            </p>
+          </div>
+          <span id="simStatusBadge" class="shrink-0 px-3 py-1.5 rounded-lg bg-slate-900 text-white font-mono text-xs font-semibold">
+            BLOCKED • RISK 0.96
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Corporate Experience & Education -->
+    <section id="experience" class="py-16 sm:py-20 border-b border-slate-200 bg-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-10">
+          <p class="font-mono text-xs uppercase tracking-wider font-semibold text-[#0F766E] mb-1.5">
+            Career &amp; Academic Background
+          </p>
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
+            Corporate Experience &amp; Education
+          </h2>
+        </div>
+
+        <div class="space-y-6">
+          <!-- KPMG India -->
+          <div class="rounded-xl bg-[#F8FAFC] border border-slate-200 p-6 sm:p-7">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+              <div>
+                <h3 class="text-lg font-bold text-slate-900">Analyst — KPMG India</h3>
+                <p class="text-sm font-medium text-[#0F766E]">
+                  Internal Developer Portal Engineering &amp; AI Automation
+                </p>
+              </div>
+              <span class="font-mono text-xs px-3 py-1 rounded-md bg-white border border-slate-200 text-slate-700 self-start">
+                Jul 2025 – Apr 2026 • Bengaluru (Hybrid)
+              </span>
+            </div>
+            <ul class="space-y-2 text-sm text-slate-600 leading-relaxed">
+              <li>• Built the company’s <strong class="font-semibold text-slate-800">Internal Developer Portal on Backstage.io</strong>, giving engineering teams a centralized hub for services, documentation, and APIs.</li>
+              <li>• Created automated <strong class="font-semibold text-slate-800">Node.js service scaffolding templates</strong> with pre-configured repo layouts, TechDocs, and company standards—cutting service setup time from half a day to minutes.</li>
+              <li>• Owned authentication and API documentation end to end (<strong class="font-semibold text-slate-800">GitHub OAuth, RBAC</strong> user/group management, Swagger integration, and live GitHub Actions pipeline visibility) and reskinned the frontend in <strong class="font-semibold text-slate-800">React and Material UI</strong>.</li>
+              <li>• Completed KPMG technical training in <strong class="font-semibold text-slate-800">AI &amp; ML case studies, personal AI agents, and productivity automation</strong>.</li>
+            </ul>
+          </div>
+
+          <!-- Digizura Technologies -->
+          <div class="rounded-xl bg-[#F8FAFC] border border-slate-200 p-6 sm:p-7">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+              <div>
+                <h3 class="text-lg font-bold text-slate-900">Web Development Intern — Digizura Technologies Private Limited</h3>
+                <p class="text-sm font-medium text-[#0F766E]">
+                  Enterprise Quotation Lifecycle &amp; Automated BOM Parsing
+                </p>
+              </div>
+              <span class="font-mono text-xs px-3 py-1 rounded-md bg-white border border-slate-200 text-slate-700 self-start">
+                Jan 2025 – Jun 2025 • Bengaluru (On-site)
+              </span>
+            </div>
+            <ul class="space-y-2 text-sm text-slate-600 leading-relaxed">
+              <li>• Delivered the <strong class="font-semibold text-slate-800">RFQ, BD, and SE modules</strong> in <strong class="font-semibold text-slate-800">Angular and LoopBack</strong>, owning the full quotation lifecycle from initial customer inquiry to final handover.</li>
+              <li>• Built an <strong class="font-semibold text-slate-800">automated Excel parser</strong> that extracted cost sheet data and generated Bills of Materials (BOM) with margin calculations, replacing manual order-by-order processing.</li>
+              <li>• Engineered multi-stage approval workflows, REST APIs, automated email notifications, and validated file upload/replace flows to prevent accidental overwrites and data drift.</li>
+            </ul>
+          </div>
+
+          <!-- Education & Certification (MCA Verified as 2025) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="rounded-xl bg-[#F8FAFC] border border-slate-200 p-6">
+              <span class="font-mono text-xs uppercase font-semibold text-[#0F766E]">
+                Postgraduate Degree • Completed 2025
+              </span>
+              <h3 class="text-base sm:text-lg font-bold text-slate-900 mt-1">
+                Master of Computer Applications (MCA)
+              </h3>
+              <p class="text-sm text-slate-600 mt-1">
+                KLN College of Engineering, Madurai, India • Graduated 2025
+              </p>
+            </div>
+
+            <div class="rounded-xl bg-[#F8FAFC] border border-slate-200 p-6">
+              <span class="font-mono text-xs uppercase font-semibold text-[#0F766E]">
+                Certification • Udemy (Ed Donner)
+              </span>
+              <h3 class="text-base sm:text-lg font-bold text-slate-900 mt-1">
+                AI Engineer Agentic Track: The Complete Agent &amp; MCP Course
+              </h3>
+              <p class="text-sm text-slate-600 mt-1">
+                Model Context Protocol (MCP), LangGraph, CrewAI, OpenAI Agents SDK &amp; AutoGen
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categorized Technical Stack -->
+    <section id="skills" class="py-16 sm:py-20 bg-[#F8FAFC]">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-10">
+          <p class="font-mono text-xs uppercase tracking-wider font-semibold text-[#0F766E] mb-1.5">
+            Core Competencies
+          </p>
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900">
+            Technical Stack
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="rounded-xl bg-white border border-slate-200 p-6">
+            <h3 class="font-mono text-xs uppercase tracking-wider font-semibold text-[#0F766E] mb-4">
+              01 // Agentic AI &amp; Orchestration
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">Model Context Protocol (MCP)</span>
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">LangGraph</span>
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">CrewAI</span>
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">OpenAI Agents SDK</span>
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">AutoGen</span>
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">Agentic RAG</span>
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">Tool Calling &amp; Guardrails</span>
+            </div>
+          </div>
+
+          <div class="rounded-xl bg-white border border-slate-200 p-6">
+            <h3 class="font-mono text-xs uppercase tracking-wider font-semibold text-[#0F766E] mb-4">
+              02 // LLMs, PyTorch &amp; Vector Search
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">PyTorch</span>
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">QLoRA / PEFT</span>
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">ChromaDB</span>
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">Embeddings &amp; Semantic Search</span>
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">Hugging Face Spaces</span>
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">Prompt Engineering</span>
+            </div>
+          </div>
+
+          <div class="rounded-xl bg-white border border-slate-200 p-6">
+            <h3 class="font-mono text-xs uppercase tracking-wider font-semibold text-[#0F766E] mb-4">
+              03 // Backend, Python &amp; Automation
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">Python</span>
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">FastAPI</span>
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">Pydantic</span>
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">Asyncio</span>
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">Playwright</span>
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">Node.js &amp; LoopBack</span>
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">REST APIs</span>
+            </div>
+          </div>
+
+          <div class="rounded-xl bg-white border border-slate-200 p-6">
+            <h3 class="font-mono text-xs uppercase tracking-wider font-semibold text-[#0F766E] mb-4">
+              04 // Frontend &amp; Enterprise Platforms
+            </h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">React</span>
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">Backstage.io</span>
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">Material UI</span>
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">Angular</span>
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">GitHub OAuth &amp; RBAC</span>
+              <span class="px-3 py-1.5 rounded-md bg-[#F8FAFC] border border-slate-200 font-mono text-xs text-slate-800">GitHub Actions</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimalist Footer -->
+  <footer class="border-t border-slate-200 bg-white py-10">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <div>
+        <p class="font-bold text-sm text-slate-900">AKASH M J — AI &amp; Full Stack Engineer</p>
+        <p class="text-xs text-slate-500 mt-0.5">MCA (2025) • Open to Bengaluru, Chennai, Hyderabad, Pune, Coimbatore &amp; Remote</p>
+      </div>
+      <div class="flex flex-wrap items-center gap-4 text-xs font-mono font-medium text-slate-600">
+        <a href="https://www.linkedin.com/in/akash-m-j-388318258/" target="_blank" rel="noopener noreferrer" class="hover:text-[#0F766E] transition">LinkedIn ↗</a>
+        <a href="https://akashmj22122002-depshield-ai.hf.space/" target="_blank" rel="noopener noreferrer" class="hover:text-[#0F766E] transition">DepShield AI</a>
+        <a href="https://huggingface.co/spaces/Akashmj22122002/titan-executive-network" target="_blank" rel="noopener noreferrer" class="hover:text-[#0F766E] transition">Titan Network</a>
+        <a href="https://huggingface.co/spaces/Akashmj22122002/Sidekick-Pro" target="_blank" rel="noopener noreferrer" class="hover:text-[#0F766E] transition">Sidekick Pro</a>
+        <a href="https://huggingface.co/spaces/Akashmj22122002/deep_research-personal" target="_blank" rel="noopener noreferrer" class="hover:text-[#0F766E] transition">Deep Research</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Architecture Deep-Dive Modal -->
+  <div id="archModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-slate-900/50 backdrop-blur-xs" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="w-full max-w-2xl rounded-xl bg-white border border-slate-200 p-6 sm:p-8 shadow-xl max-h-[90vh] overflow-y-auto">
+      <div class="flex items-start justify-between gap-4 pb-4 border-b border-slate-200 mb-5">
+        <div>
+          <p id="modalKicker" class="font-mono text-xs uppercase font-semibold text-[#0F766E]">System Architecture</p>
+          <h3 id="modalTitle" class="text-lg sm:text-xl font-bold text-slate-900 mt-0.5">
+            Project Architecture
+          </h3>
+        </div>
+        <button type="button" id="closeModalBtn" aria-label="Close Architecture Modal" class="p-1.5 rounded-lg text-slate-500 hover:text-slate-900 hover:bg-slate-100 transition">
+          ✕
+        </button>
+      </div>
+
+      <div id="modalStages" class="space-y-3 text-sm"></div>
+
+      <div class="mt-6 pt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
+        <span id="modalMetrics" class="font-mono text-xs text-slate-600 font-medium"></span>
+        <a id="modalLiveLink" href="#" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-lg bg-[#0F766E] hover:bg-[#115E59] text-white font-semibold text-xs sm:text-sm transition">
+          Launch Live App ↗
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Clean Copy Notification Toast -->
+  <div id="toastBanner" class="fixed bottom-5 right-5 z-50 hidden px-4 py-3 rounded-lg bg-slate-900 text-white text-xs sm:text-sm font-medium shadow-lg">
+    ✓ Recruiter summary copied to clipboard
+  </div>
+
+  <script>
+    // 1. DepShield AI 4-Stage Pipeline Sample Toggle
+    const sampleThreatBtn = document.getElementById('sampleThreatBtn');
+    const sampleCleanBtn = document.getElementById('sampleCleanBtn');
+    const s1Latency = document.getElementById('s1Latency');
+    const s2Latency = document.getElementById('s2Latency');
+    const s3Latency = document.getElementById('s3Latency');
+    const s4Latency = document.getElementById('s4Latency');
+    const s1Detail = document.getElementById('s1Detail');
+    const s2Detail = document.getElementById('s2Detail');
+    const s3Detail = document.getElementById('s3Detail');
+    const s4Detail = document.getElementById('s4Detail');
+    const simCommand = document.getElementById('simCommand');
+    const simSummary = document.getElementById('simSummary');
+    const simStatusBadge = document.getElementById('simStatusBadge');
+
+    function setPipelineSample(mode) {
+      if (mode === 'threat') {
+        sampleThreatBtn.className = 'px-3.5 py-1.5 rounded-md bg-[#0F766E] text-white font-mono text-xs font-semibold transition';
+        sampleCleanBtn.className = 'px-3.5 py-1.5 rounded-md text-slate-600 hover:text-slate-900 font-mono text-xs font-semibold transition';
+
+        s1Latency.textContent = '14 ms';
+        s2Latency.textContent = '22 ms';
+        s3Latency.textContent = '38 ms';
+        s4Latency.textContent = '185 ms';
+
+        s1Detail.innerHTML = 'Detected <code class="font-mono">exec(base64.b64decode)</code> in <code class="font-mono">setup.py</code> with high Shannon entropy (7.42).';
+        s2Detail.innerHTML = 'Risk probability <strong>0.96</strong> — new PyPI account (4 hrs old) mimicking <code class="font-mono">torch</code>.';
+        s3Detail.textContent = '94% similarity match to known environment-variable credential exfiltration patterns.';
+        s4Detail.textContent = 'Generated plain-English audit summary and enforced pre-install block via CLI & MCP.';
+
+        simCommand.textContent = 'depshield install torch-cuda-helper-v2';
+        simSummary.textContent = 'Installation halted prior to code execution. Zero untrusted install hooks were evaluated on host.';
+        simStatusBadge.textContent = 'BLOCKED • RISK 0.96';
+        simStatusBadge.className = 'shrink-0 px-3 py-1.5 rounded-lg bg-slate-900 text-white font-mono text-xs font-semibold';
+      } else {
+        sampleCleanBtn.className = 'px-3.5 py-1.5 rounded-md bg-[#0F766E] text-white font-mono text-xs font-semibold transition';
+        sampleThreatBtn.className = 'px-3.5 py-1.5 rounded-md text-slate-600 hover:text-slate-900 font-mono text-xs font-semibold transition';
+
+        s1Latency.textContent = '11 ms';
+        s2Latency.textContent = '18 ms';
+        s3Latency.textContent = '30 ms';
+        s4Latency.textContent = '140 ms';
+
+        s1Detail.textContent = 'Clean declarative wheel AST with normal Shannon entropy (4.18) and zero dynamic execution calls.';
+        s2Detail.innerHTML = 'Risk probability <strong>0.04</strong> — established maintainer history and verified release cadence.';
+        s3Detail.textContent = 'Zero matches against malicious supply-chain or slopsquatting threat signatures.';
+        s4Detail.textContent = 'Verified clean dependency and passed control back to pip install automatically.';
+
+        simCommand.textContent = 'depshield install pydantic-settings';
+        simSummary.textContent = 'Package passed all four zero-execution security checks and proceeded safely to installation.';
+        simStatusBadge.textContent = 'APPROVED • RISK 0.04';
+        simStatusBadge.className = 'shrink-0 px-3 py-1.5 rounded-lg bg-[#0F766E] text-white font-mono text-xs font-semibold';
+      }
+    }
+
+    sampleThreatBtn.addEventListener('click', () => setPipelineSample('threat'));
+    sampleCleanBtn.addEventListener('click', () => setPipelineSample('clean'));
+
+    // 2. Architecture Modal Logic for All 4 Projects
+    const projectArchitectures = {
+      depshield: {
+        kicker: '4-Stage Zero-Execution Security Ensemble',
+        title: 'DepShield AI — System Architecture',
+        metrics: '100% Recall • 87.50% F1 • CLI & MCP',
+        url: 'https://akashmj22122002-depshield-ai.hf.space/',
+        stages: [
+          {
+            step: 'STAGE 01 • STATIC AST & ENTROPY',
+            name: 'Zero-Execution Code & PyPI Metadata Inspector',
+            desc: 'Parses Python ASTs, Shannon entropy across package files, and live PyPI metadata without executing setup.py or install scripts.'
+          },
+          {
+            step: 'STAGE 02 • PYTORCH CLASSIFIER',
+            name: 'Supervised Risk Scoring Model',
+            desc: 'Scores extracted structural AST flags and package maturity metrics into a calibrated threat probability.'
+          },
+          {
+            step: 'STAGE 03 • CHROMADB THREAT RAG',
+            name: 'Historical Malware Signature Retrieval',
+            desc: 'Queries ChromaDB embeddings of known supply-chain attack patterns and slopsquatted package names.'
+          },
+          {
+            step: 'STAGE 04 • LLM SECURITY ANALYST + MCP',
+            name: 'Plain-English Audit & Pre-Install Gatekeeper',
+            desc: 'Synthesizes structured evidence into clear explanations and enforces pre-install blocks via CLI and VS Code MCP Server.'
+          }
+        ]
+      },
+      titan: {
+        kicker: 'Async Multi-Agent Market Simulation',
+        title: 'The Titan Corporate Executive Network — System Architecture',
+        metrics: 'Stdio MCP • 25-Cycle Reasoning • 23 UI Targets',
+        url: 'https://huggingface.co/spaces/Akashmj22122002/titan-executive-network',
+        stages: [
+          {
+            step: 'LAYER 01 • STDIO MCP REGISTRIES',
+            name: 'Direct Pipe-Based Structured Tool Execution',
+            desc: 'Connects autonomous executive agents to validated financial and equity tools over thread-safe Stdio MCP pipes.'
+          },
+          {
+            step: 'LAYER 02 • 25-CYCLE REASONING LOOP',
+            name: 'Bounded Multi-Step Planning & Self-Verification',
+            desc: 'Gives each agent up to 25 reasoning and tool-call cycles per turn to evaluate market shocks and verify trades.'
+          },
+          {
+            step: 'LAYER 03 • CONCURRENT PERSISTENCE',
+            name: 'Thread-Safe Local State Locks',
+            desc: 'Prevents race conditions and ledger corruption across parallel autonomous agent threads.'
+          },
+          {
+            step: 'LAYER 04 • DECOUPLED GRADIO UI',
+            name: 'Global Sync Timer Across 23 Data Targets',
+            desc: 'Refreshes 23 live UI components concurrently without blocking the async agent backend.'
+          }
+        ]
+      },
+      sidekick: {
+        kicker: 'Stateful LangGraph Evaluator-Optimizer',
+        title: 'Sidekick Pro — System Architecture',
+        metrics: 'LangGraph • Playwright • Worker–Critic Loop',
+        url: 'https://huggingface.co/spaces/Akashmj22122002/Sidekick-Pro',
+        stages: [
+          {
+            step: 'NODE 01 • GOAL PARSER',
+            name: 'Plain-English Objective & Success Criteria',
+            desc: 'Accepts a single plain-English prompt and success criteria without requiring step-by-step scripting.'
+          },
+          {
+            step: 'NODE 02 • PLAYWRIGHT BROWSER AGENT',
+            name: 'Live Web Navigation with User-Agent Spoofing',
+            desc: 'Navigates live websites with spoofed User-Agent headers to extract data from sites that block standard scrapers.'
+          },
+          {
+            step: 'NODE 03 • CRITIC EVALUATION LOOP',
+            name: 'Conditional Self-Correction Routing',
+            desc: 'Critic agent reviews extracted results against user criteria and routes back to the browser worker if incomplete.'
+          },
+          {
+            step: 'NODE 04 • AUTOMATED DELIVERY LAYER',
+            name: 'Markdown Reports, Screenshots & Push Alerts',
+            desc: 'Packages verified outputs into formatted Markdown reports, high-resolution screenshots, and mobile push notifications.'
+          }
+        ]
+      },
+      research: {
+        kicker: 'Role-Based Multi-Agent Research Pipeline',
+        title: 'Deep Research Engine — System Architecture',
+        metrics: 'CrewAI • Handoff Validation • PDF/Word/PPTX',
+        url: 'https://huggingface.co/spaces/Akashmj22122002/deep_research-personal',
+        stages: [
+          {
+            step: 'AGENT 01 • WEB RESEARCHER',
+            name: 'Targeted Multi-Source Discovery',
+            desc: 'Executes web searches to gather primary domain facts, references, and supporting evidence.'
+          },
+          {
+            step: 'AGENT 02 • CROSS-EXAMINER',
+            name: 'Fact Verification & Handoff Validation',
+            desc: 'Cross-examines gathered findings and enforces structured handoff schemas to maintain context accuracy.'
+          },
+          {
+            step: 'AGENT 03 • REPORT SYNTHESIZER',
+            name: 'Structured Multi-Section Compilation',
+            desc: 'Organizes verified findings into clean executive summaries and structured sections.'
+          },
+          {
+            step: 'STAGE 04 • MULTI-FORMAT EXPORTER',
+            name: 'Direct PDF, Word & PowerPoint Generation',
+            desc: 'Exports ready-to-share PDF, Word, and PowerPoint files automatically without manual copy-pasting.'
+          }
+        ]
+      }
+    };
+
+    const archModal = document.getElementById('archModal');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const modalKicker = document.getElementById('modalKicker');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalStages = document.getElementById('modalStages');
+    const modalMetrics = document.getElementById('modalMetrics');
+    const modalLiveLink = document.getElementById('modalLiveLink');
+
+    document.querySelectorAll('.arch-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const key = btn.getAttribute('data-project');
+        const data = projectArchitectures[key];
+        if (!data) return;
+
+        modalKicker.textContent = data.kicker;
+        modalTitle.textContent = data.title;
+        modalMetrics.textContent = data.metrics;
+        modalLiveLink.href = data.url;
+
+        modalStages.innerHTML = data.stages
+          .map(
+            (st) => `
+            <div class="p-4 rounded-lg bg-[#F8FAFC] border border-slate-200 border-l-4 border-l-[#0F766E]">
+              <p class="font-mono text-[11px] font-semibold text-[#0F766E]">${st.step}</p>
+              <p class="font-bold text-slate-900 mt-0.5">${st.name}</p>
+              <p class="text-xs text-slate-600 mt-1 leading-relaxed">${st.desc}</p>
+            </div>
+          `
+          )
+          .join('');
+
+        archModal.classList.remove('hidden');
+        archModal.classList.add('flex');
+      });
+    });
+
+    function closeArchModal() {
+      archModal.classList.add('hidden');
+      archModal.classList.remove('flex');
+    }
+    closeModalBtn.addEventListener('click', closeArchModal);
+    archModal.addEventListener('click', (e) => {
+      if (e.target === archModal) closeArchModal();
+    });
+
+    // 3. Recruiter Summary Copy Button
+    const navCopyPitchBtn = document.getElementById('navCopyPitchBtn');
+    const toastBanner = document.getElementById('toastBanner');
+    const recruiterPitch =
+      "Akash M J — AI & Full Stack Engineer (MCA 2025, ex-KPMG India Analyst). Specializes in Agentic AI, Model Context Protocol (MCP), LangGraph, CrewAI, Agentic RAG (ChromaDB), PyTorch, and FastAPI. Live Hugging Face Apps: DepShield AI (https://akashmj22122002-depshield-ai.hf.space/), Titan Corporate Executive Network (https://huggingface.co/spaces/Akashmj22122002/titan-executive-network), Sidekick Pro (https://huggingface.co/spaces/Akashmj22122002/Sidekick-Pro), and Deep Research Engine (https://huggingface.co/spaces/Akashmj22122002/deep_research-personal) | LinkedIn: https://www.linkedin.com/in/akash-m-j-388318258/";
+
+    navCopyPitchBtn.addEventListener('click', () => {
+      const tempArea = document.createElement('textarea');
+      tempArea.value = recruiterPitch;
+      tempArea.style.position = 'fixed';
+      tempArea.style.left = '-9999px';
+      document.body.appendChild(tempArea);
+      tempArea.select();
+      try {
+        document.execCommand('copy');
+        toastBanner.classList.remove('hidden');
+        setTimeout(() => toastBanner.classList.add('hidden'), 3000);
+      } catch (err) {
+        console.error('Copy failed', err);
+      }
+      document.body.removeChild(tempArea);
+    });
+  </script>
+</body>
+</html>
